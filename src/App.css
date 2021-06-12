@@ -3,7 +3,5 @@
    display: block;
    color: white;
    padding-left: 16;
-}
-.h2{
-   align-items: center;
+   align-content: center;
 }

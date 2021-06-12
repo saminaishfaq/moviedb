@@ -9,22 +9,21 @@ function App() {
      <table className="titleBar">
        <tbody>
          <tr>
-           
+           <td><img src="/img/mdb.png" alt="" width="50"/>    </td>
+         <td><h3 >TMDB Client</h3></td>
           </tr>
+          <tr>
+            
+                      
+          </tr>
+          
           
            
           
         </tbody>
       </table> 
-      <input style={{
-         fontSize: 15,
-         panddingTop:8,
-         panddingBorder:8,
-         paddingLeft:16,
-         display:'black',
-      }} 
-      placeholder="Enter search term" /> 
-      <h2 >All movies</h2>  
+      
+        
     </div>
   );
     }
