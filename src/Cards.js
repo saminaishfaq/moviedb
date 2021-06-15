@@ -1,5 +1,5 @@
 import React , {useState,useEffect} from 'react';
-import { Form } from 'react-bootstrap';
+import {Bootstrap } from 'react-bootstrap';
 import axios from 'axios';
 
 
@@ -24,14 +24,18 @@ const Cards= () => {
           
         {data && data.results.map(item => (
           <div class="card border-danger mb-50 " style={{width: "15rem" }}>
-          <img src="mv.jpg.jpg"class="card-img-top" alt=""  />
+          <img src={"https://image.tmdb.org/t/p/w342/6MKr3KgOLmzOP6MSuZERO41Lpkt.jpg"} class="card-img-top" alt=""  />
           
    <div class="card-body text-danger ">
-            <h6 class="card-text">
-                {item.Title}
-             </h6>
-            <h6>{item.Date}</h6>
-            <h6>{item.rating}</h6>
+            <h5 class="card-text">
+            Title:{item.title}
+             </h5>
+             
+            id:<h5>{item.id}</h5>
+            release_date:<h5>{item.release_date}</h5>
+            vote_average:<h5>{item.vote_average}</h5>
+            vote_count<h5>{item.vote_count}</h5> 
+          
             <a href="www.movie Database.com">{item.Description}</a>
    </div>
    
